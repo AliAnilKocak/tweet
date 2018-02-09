@@ -99,9 +99,10 @@
 
  </div><!-- header wrapper end -->
 
- <script type="text/javascript" src="assets/js/search.js">
+ <script type="text/javascript" src="assets/js/search.js"></script>
+ <script type="text/javascript" src="assets/js/hashtag.js"></script>
 
- </script>
+
 
  <!---Inner wrapper-->
  <div class="inner-wrapper">

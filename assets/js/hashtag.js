@@ -27,9 +27,30 @@ $(function(){
              $('.status').val(newContent+value+' ');
              $('.hash-box li').hide();
              $('.status').focus();
-          })
+
+
+             $('#count').text(max - content.length);
+
+
+
+          });
         }
-      })
+      });
+    }
+    else {
+      $('.hash-box li').hide();
+    }
+
+     $('#count').text(max - content.length);
+
+    if(content.length  === max)
+    {
+      $('#count').css('color','#f00');
+    }
+    else {
+      {
+        $('#count').css('color','#000');
+      }
     }
   });
 

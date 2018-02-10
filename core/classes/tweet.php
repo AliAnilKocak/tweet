@@ -73,6 +73,33 @@
 </div>';
       }
     }
+
+
+
+    public function getTrendByHash($hashtag)
+    {
+      $stmt = $this->pdo->prepare("SELECT * FROM trends WHERE hashtag LIKE :hashtag");
+      $stmt->bindValue(':hashtag', $hashtag.'%');
+      $stmt->execute();
+      return $stmt->fetchAll(PDO::FETCH_OBJ);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
 
  ?>
